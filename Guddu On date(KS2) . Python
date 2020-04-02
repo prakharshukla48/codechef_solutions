@@ -1,0 +1,18 @@
+T = int(input())
+for i in range(1,T+1):
+    n =int(input())
+    l = [] 
+    for i in range(18, 10000):
+        num = 0 
+        total =0
+        j=1
+        while(i/j >= 1):
+            num = (i/j)
+            hum = int(num)
+            total  =  total + hum%10
+            num = i
+            j = j*10
+        if (total%10==0):
+            l.append(num)
+                
+    print (l[n-1])            
