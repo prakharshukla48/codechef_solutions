@@ -1,0 +1,15 @@
+a = int(input())
+jump = []
+i = 0
+while(i <= a):
+    jump.append(i)
+    i = i + 1
+    jump.append(i)
+    i = i + 2 
+    jump.append(i)
+    i = i + 3
+if a in jump:
+    print("yes")
+else:
+    print("no")
+    """ python code"""
