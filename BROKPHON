@@ -1,0 +1,18 @@
+t = int(input())
+for i in range(1,t+1):
+    num = []
+    temp = []
+    n = int(input())
+    m = list(map(int, input().strip().split(' ')))
+    for i in range(1,n):
+        if (m[i-1] != m[i]):
+            if m.index[m[i]] in temp:
+                continue
+        else:    
+            num.append(m[i-1]) and temp.append(index(m[i-1]))
+            num.append(m[i]) and temp.append(index(m[i]))
+        for i in range(0,len(num-1)):
+            if (m.index(
+    
+    print(len(num))  
+    
