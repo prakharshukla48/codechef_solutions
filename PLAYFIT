@@ -1,0 +1,16 @@
+T = int(input())
+for i in range(1,T+1):
+    maxr = []
+    n = int(input())
+    inp = list(map(int, input().strip().split(' ')))
+    for i in range(0,n):
+        for j in range(i,n):
+            maxi = 0
+            if (inp[j] > inp[i]):
+                maxi = maxi + (inp[j] - inp[i])
+                maxr.append(maxi)
+                t = max(maxr)            
+    if len(maxr) == 0:    
+        print("UNFIT")
+    else:
+        print(t)     
